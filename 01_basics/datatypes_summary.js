@@ -1,6 +1,8 @@
 // Primitive  
 // 7 types: String,Number,Boolearn Null,Undefined,Symbol,BigInt
 
+const { captureOwnerStack } = require("react");
+
 const score = 100
 const scoreValue = 100.3
 
@@ -40,3 +42,33 @@ console.log(typeof heros);
 //String => "string"
 //Object(native and does not implement[call]) => "object"
 //Object(native and does implement[call]) => "function"
+
+
+
+
+//**********************Memory*********************
+// Stack(Primitive), Heap(Non-Primitive)
+
+let myYoutubename = "janvi@8979com"
+
+let anothername = myYoutubename
+anothername = "Janvi"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com"
+    
+}
+
+let userTwo = userOne
+
+userTwo = userOne
+
+userTwo.email = "Janvi@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
