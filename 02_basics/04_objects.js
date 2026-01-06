@@ -48,3 +48,20 @@ const obj4 = {...obj1, ...obj2, ...obj3} //spread operator
  
  console.log(tinderUser.hasOwnProperty('isLOggedIn'));
  
+
+ const course = {
+   coursename: "JavaScript",
+   price:  999
+   courseInstructor: "janvi",
+ }
+
+  const {courseInstructor: instruction} = course
+   // console.log(courseInstructor);
+// console.log(instruction);
+
+
+{
+   "name": "janvi",
+   "coursename": "js",
+   "price":"free",
+}
